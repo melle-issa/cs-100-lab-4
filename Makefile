@@ -1,2 +1,2 @@
-area_calculator: src/main.cpp src/rectangle.cpp
-    g++ -o area_calculator src/main.cpp src/rectangle.cpp
+test: src/main.cpp src/rectangle.cpp
+    g++ -o test src/main.cpp src/rectangle.cpp

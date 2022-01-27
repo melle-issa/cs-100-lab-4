@@ -4,9 +4,13 @@ ADD_SUBDIRECTORY(googletest)
 
 SET(CMAKE_CXX_STANDARD 11)
 
-ADD_EXECUTABLE(test
+ADD_EXECUTABLE(calculate
     src/main.cpp
     src/rectangle.cpp
+)
+
+ADD_EXECUTABLE(test
+    tests/test.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
