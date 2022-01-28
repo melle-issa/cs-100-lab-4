@@ -13,6 +13,8 @@ class Rectangle {
         void set_height(int h);
         int area();
         int perimeter();
+        int getWidth(){return width;}
+        int getHeight(){return height;}
 };
 
 #endif // RECTANGLE_HPP
