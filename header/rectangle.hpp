@@ -11,10 +11,10 @@ class Rectangle {
 
         void set_width(int w);
         void set_height(int h);
+        int getWidth() const;
+        int getHeight()const; 
         int area();
         int perimeter();
-        int getWidth(){return width;}
-        int getHeight(){return height;}
 };
 
 #endif // RECTANGLE_HPP

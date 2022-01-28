@@ -3,20 +3,22 @@
 
 TEST(Constructors, positiveVal){
     Rectangle obj1(6,8);
-    EXPECT_TRUE(obj1.width == 6);
-    EXPECT_TRUE(obj1.height == 8);
+    int w = obj1->getWidth();
+    int h = obj1->getHeight();
+    EXPECT_TRUE(w == 6);
+    EXPECT_TRUE(h == 8);
 }
 
 TEST(Constructors, oneNegativeVal){
     Rectangle obj2(-6, 8);
-    EXPECT_TRUE(obj2.width == -6);
-    EXPECT_TRUE(obj2.height == 8);
+    EXPECT_TRUE(obj2.getWidth() == -6);
+    EXPECT_TRUE(obj2.getHeight() == 8);
 }
 
 TEST(Constructors, twoNegativeVals){
     Rectangle obj3(-6, -8);
-    EXPECT_TRUE(obj3.width == -6);
-    EXPECT_TRUE(obj3.height == -8);
+    EXPECT_TRUE(obj3.getWidth() == -6);
+    EXPECT_TRUE(obj3.getHeight() == -8);
 }
 
 TEST(Area, positiveVal){
