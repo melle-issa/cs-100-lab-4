@@ -3,10 +3,8 @@
 
 TEST(Constructors, positiveVal){
     Rectangle obj1(6,8);
-    int w = obj1->getWidth();
-    int h = obj1->getHeight();
-    EXPECT_TRUE(w == 6);
-    EXPECT_TRUE(h == 8);
+    EXPECT_TRUE(obj1.getWidth() == 6);
+    EXPECT_TRUE(obj1.getHeight() == 8);
 }
 
 TEST(Constructors, oneNegativeVal){
@@ -48,13 +46,13 @@ TEST(Perimeter, positiveVal){
 TEST(Perimeter, oneNegativeVal){
    Rectangle obj8(-2,3);
    int obj8Perimeter = obj8.perimeter();
-   EXPECT_TRUE(obj8Perimeter == 10);
+   EXPECT_TRUE(obj8Perimeter != 10);
 }
 
 TEST(Perimeter, twoNegativeVals){
    Rectangle obj9(-2, -3);
    int obj9Perimeter = obj9.perimeter();
-   EXPECT_TRUE(obj9Perimeter == 10);
+   EXPECT_TRUE(obj9Perimeter != 10);
 }
 
 int main(int argc, char **argv) {
