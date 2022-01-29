@@ -2,7 +2,7 @@
 #include "../header/rectangle.hpp"
 
 TEST(Constructors, positiveVal){
-    Rectangle obj1(6,8);
+    Rectangle obj1(6,8); 
     EXPECT_TRUE(obj1.getWidth() == 6);
     EXPECT_TRUE(obj1.getHeight() == 8);
 }
